@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="resources/styles/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bellota+Text&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div id="sticky-navbar" class="sticky">
+    <ul class="navbar">
+      <li class="hamburger-icon"> <i class="fa fa-bars"></i></li>
+      <li class="link"><a href="#about-me"> O mnie</a></li>
+      <li class="link"><a href="#goals">Cele</a></li>
+      <li class="link"><a href="#education">Edukacja</a></li>
+      <li class="link"><a href="#intrests">Zainteresowania</a></li>
+      <li class="link"><a href="#projects">Projekty</a></li>
+      <li class="link"><a href="#contact">Kontakt</a></li>
+    </ul>
+  </div>
+  <div id="about-me" class="bg-img-portrait">
+    <span class="introduction">
+      O MNIE:
+    </span>
+    </br>
+    <span class="description">
+      <b>Cześć! Nazywam się <b>Przemysław Pernak </b>,<br /> jestem absolwentem Politechniki
+        Poznańskiej<br /> kierunku infromatyka i jestem junior front-end developerem</b>
+    </span>
+  </div>
+
+  <div id="goals" class="info-bar" onclick="toggleRollDown(this.id)">
+    <div class="info-bar-inner">
+      <div class="float-left">
+        <img class="invert-colors" src="resources/images/goals.png" />
+      </div>
+      <div class="float-left">
+        <p class="info-bar-title">CELE </p>
+      </div>
+    </div>
+  </div>
+  <div id="goals-desc" class="content-description">
+    <h3>Moim celem jest tworzenie aplikacji internetowych oraz sukcesywny rozwój w technologiach
+      frontendendowych i backendowych.</h3>
+    <p><b>Html</b>,<b> Javascript</b> i <b>CSS</b> to języki, które mam aktualnie w znacznym stopniu opanowane.</p>
+    <p>Obecnie jestem na etapie poznawania i nauki frameworków frontendowych takich jak: <b>React</b> oraz <b>Vue</b>.
+    </p>
+    <p> Ponadto jako swoje kolejne cele wyznaczam sobie naukę Node.js i innych narzędzi backendowych.</b> </p>
+  </div>
+
+  <div id="education" class="info-bar" onclick="toggleRollDown(this.id)">
+    <div class="info-bar-inner">
+      <div class="float-left">
+        <img class="invert-colors" src="resources/images/education.png" />
+      </div>
+      <div class="float-left">
+        <p class="info-bar-title">EDUKACJA</p>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="education-desc" class="content-description">
+
+    <h3>studia</h3>
+    absolwent Politechniki Poznańskiej kierunku Informatyka na Wydziale Elektrycznym
+    <h3>języki obce</h3>
+    Angielski (B2)
+    Niemiecki (A2)
+  </div>
+
+
+  <div id="abilities" class="info-bar" onclick="toggleRollDown(this.id)">
+    <div class="info-bar-inner">
+      <div class="float-left">
+        <img class="invert-colors" src="resources/images/abilities.png" />
+      </div>
+      <div class="float-left">
+        <p class="info-bar-title">UMIEJĘTNOŚCI </p>
+      </div>
+    </div>
+  </div>
+  <div id="abilities-desc" class="content-description">
+    <h3>języki programowania</h3>
+    Javascript (junior)
+    HTML (junior)
+    CSS 3 (junior)
+    Python (junior)
+    </br>
+    <h3>frameworki</h3>
+    React (junior)
+    <h3>bazy danych</h3>
+    MySQL (junior)
+    <h3>programy edytorskie</h3>
+    Gimp (podstawy) Inkscape (podstawy)
+    <h3>systemy kontroli wersji</h3>
+    Git, TortoiseSVN
+  </div>
+
+  <div id="intrests" class="info-bar" onclick="toggleRollDown(this.id)">
+    <div class="info-bar-inner">
+      <div class="float-left"><img class="invert-colors" src="resources/images/intrests.png" /></div>
+      <div class="float-left">
+        <p class="info-bar-title"> ZAINTERESOWANIA</p>
+      </div>
+    </div>
+  </div>
+  <div id="intrests-desc" class="flex-container">
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div id="skiing" class="flip-card-front">
+        </div>
+        <div class="flip-card-back" style="background-color: #dd4848;;">
+          <h3>Narciarstwo</h3>
+          <p>Narciarstwo to moja ulubiona dyscyplina sportowa, którą uprawiam od 6 roku życia.
+            Regularnie co roku spędzam czas zimą na wyjazdach narciarskich z czego częrpię dużo siły do dalszej pracy.
+          </p>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div id="print3d" class="flip-card-front">
+        </div>
+        <div class="flip-card-back">
+          <h3>Druk 3D</h3>
+          <p>Jest to od nie dawna jedna z moich nowych pasji.
+            Możliwości tworzenia dowolnych modeli w blenderze sprawiają, że
+            jest to niewyczerpalne źródło zabawy i doświadczenie w grafice przestrzennej.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div id="programming" class="flip-card-front">
+        </div>
+        <div class="flip-card-back" style="background-color: rgb(42, 104, 155);">
+          <h3>Programowanie</h3>
+          <p>Informatykę jak i programowanie to dziedziny, o których z przekonaniem
+            mogę powiedzieć, że budzą moją ciekawość i fascynację.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div id="squash" class="flip-card-front">
+        </div>
+        <div class="flip-card-back" style="background-color: rgb(183, 185, 69);">
+          <h3>Squash</h3>
+          <p>Squash to druga moja ulubiona dyscyplina,
+            w którą wkręciłem się na studiach.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="projects" class="info-bar" onclick="toggleRollDown(this.id)">
+    <div class="info-bar-inner">
+      <div class="float-left"><img class="invert-colors" src="resources/images/projects.png" /></div>
+      <div class="float-left">
+        <p class="info-bar-title">PROJEKTY</p>
+      </div>
+    </div>
+  </div>
+  <div id="projects-desc" class="content-description">
+    <h3>konto Github</h3>
+    <p>
+      <a href="https://www.github.com/perninio">github.com/perninio</a>
+    </p>
+
+  </div>
+  <div id="contact" class="info-bar" onclick="toggleRollDown(this.id)">
+    <div class="info-bar-inner">
+      <div class="float-left">
+        <img class="invert-colors " src="resources/images/contact.png" /></div>
+      <div class="float-left">
+        <p class="info-bar-title">KONTAKT</p>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div id="contact-desc" class="content-description">
+      <div>
+        <br>+48 789 149 913 <br />
+        <br />
+        przemekshepard@gmail.com
+      </div>
+      <br />
+      Mój profil:
+      <br />
+      <a href="https://www.linkedin.com/in/przemys%C5%82aw-pernak-9163ab1a4/">
+        <img src="https://cdn.worldvectorlogo.com/logos/linkedin.svg" width="100px" />
+      </a>
+    </div>
+  </div>
+  </div>
+  <script src="resources/scripts/index.js">
+  </script>
+</body>
+
+</html>
